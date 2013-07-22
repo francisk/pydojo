@@ -1,0 +1,10 @@
+from rental import Rental
+import unittest
+
+class Test_customer(unittest.TestCase):
+    def setUp(self):
+        pass
+    def tearDown(self):
+        pass
+
+    

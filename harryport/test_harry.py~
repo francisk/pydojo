@@ -1,0 +1,21 @@
+import unittest
+import harryport
+
+class Test_harryport(unittest.TestCase):
+    def setUp(self):
+        pass
+    def tearDown(self):
+        pass
+    def test_2_books_should_have_2_choices(self):
+        self.assertEqual(2, len( list(harryport.get_distinct_strategies(2,5))))
+    def test_3_books_should_have_4_choices(self):
+        self.assertEqual(4, len( list(harryport.get_distinct_strategies(3,5))))
+    def test_8_books_should_have_N_choices(self):
+        self.assertEqual(120, len( list(harryport.get_distinct_strategies(8,5))))
+    def test_combination_book_price(self):
+        self.assertEqual(22.,harryport.get_total_price(harryport.BOOK_PRICE,
+                                               harryport.DISCOUNT,
+                                               (2,1)))
+
+if __name__ == '__main__':
+    unittest.main()

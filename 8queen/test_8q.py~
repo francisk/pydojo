@@ -1,0 +1,15 @@
+import equeen
+import unittest
+
+
+class Test_8queen(unittest.TestCase):
+    def setUp(self):
+        pass
+    def tearDown(self):
+        pass
+    def test_conflict(self):
+        self.assertEqual(False,equeen.conflict((3,1),4))
+    def test_conflict(self):
+        self.assertEqual(True,equeen.conflict((3,2),1))
+if __name__ == '__main__':
+    unittest.main()
