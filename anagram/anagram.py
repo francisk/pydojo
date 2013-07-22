@@ -25,7 +25,7 @@ class Anagram(object):
             else:
                 self.output.append(tmp_str+char)
 
-class AnaLst(object):
+class AnagramLst(object):
     def __init__(self, number):
         self._number = number
 
